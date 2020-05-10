@@ -5,273 +5,399 @@
 <head>
 
 	<!--- Basic page needs
-	================================================== -->
+	************************************************** -->
 	<meta charset="utf-8" />
 	<title>Portfolio Tathiane</title>
 
 	<!-- Mobile specific metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	************************************************** -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<!-- CSS
-    ================================================== -->
+    ************************************************** -->
 	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="css/fixed.css" />
 
 	<!-- Icon
-	================================================== -->
+	************************************************** -->
 	<link rel="icon" type="image/png" href="icon.png">
 
 </head>
 
-<body data-spy="scroll" data-target="#navbarResponsive">
+<body>
+	<!-- <body data-spy="scroll" data-target="#navbarResponsive"> -->
 
 	<!-- Home Section
-	================================================== -->
-	<div id="home">
-		<!-- Navigation-->
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" href="#"><img src="icon.png" /></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	************************************************** -->
+	<header id="home">
+		<div class="offset">
+			<!-- Navigation-->
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top ">
+				<a class="navbar-brand " href="#"><img src="icon.png" /></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#experiences">Experiences</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Works</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#experiences">Experiences</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#works">Works</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!--End  Navigation-->
+
+
+			<!-- Intro Page -->
+			<div class="intro">
+				<div class="home-wrap">
+					<div class="home-inner"></div>
+				</div>
 			</div>
-		</nav>
-		<!--End  Navigation-->
 
-
-	<!-- Intro Page -->
-		<div class="intro">
-			<div class="home-wrap">
-				<div class="home-inner"></div>
+			<div class="caption text-center">
+				<h1>Tathiane Ribeiro Souza</h1>
+				<p class="bars">
+					<span> Web Developer </span>
+					<span> Mobile Developer</span>
+				</p>
+				<a class="btn btn-outline-light btn-lg" href="#about">More About Me</a>
 			</div>
+			<!--End Intro -->
 		</div>
-
-		<div class="caption text-center">
-			<h1>Tathiane Ribeiro Souza</h1>
-			<p>
-				<span>| Web Developer |</span>
-				<span> Mobile Developer |</span>
-			</p>
-			<a class="btn btn-outline-light btn-lg" href="#about">More About Me</a>
-		</div>
-		<!--End Landing -->
-	</div> <!--End Home Section -->
-
+		<!--End Home Section -->
+	</header>
 
 	<!-- About Section
-	================================================== -->
-	<div id="about" class="offset ">
-		<div class="col-12 about text-center">
-			<h3 class="heading"> ABOUT</h3>
-			<!-- <h2>Let me introduce myself.</h2> -->
-			<div class="row">
-				<div class="col-md-3">
-					<img src="img/profile.jpg">
-				</div>
-				<div class="col-md-9 text-justify">
-					<p></p>
-					<p></p>
-					<p class="lead"> Undergraduate student in Computer Science, by Universidade Federal do Ceará.
-						... If you have a project or creative need that I can help with, please get in touch.
-					</p>
-				</div>
-			</div>
-			
-			<div class="row about-content">
-				<div class="col-md-6 text-justify">
-					<h2>PROFILE</h2>
-					<p>....</p>
-
-					<ul class="info-list">
-						<li>
-							<strong>Fullname:</strong>
-							<span>Tathiane Ribeiro Souza</span>
-						</li>
-						<li>
-							<strong>Job:</strong>
-							<span>Freelancer, Frontend Developer</span>
-						</li>
-						<li>
-							<strong>Email:</strong>
-							<span>tathianesouza1@gmail.com</span>
-						</li>
-						<li>
-							<strong>Github:</strong>
-							<span><a href="https://github.com/Trsouza">github.com/Trsouza </a> </span>
-						</li>
-						<li>
-							<strong>Linkedin:</strong>
-							<span><a
-									href="https://www.linkedin.com/in/tathiane-ribeiro-souza/">linkedin.com/in/tathiane-ribeiro-souza/</a>
-							</span>
-
-						</li>
-					</ul> <!-- /info-list -->
+	************************************************** -->
+	<section id="about">
+		<div class="offset ">
+			<div class="col-12 about text-center">
+				<h3 class="heading"> ABOUT</h3>
+				<div class="heading-underline"></div>
+				<!-- <h2>Let me introduce myself.</h2> -->
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/pc.jpeg" class="image-fluid ">
+					</div>
+					<div class="col-md-9 text-justify">
+						<p></p>
+						<p></p>
+						<p class="lead"> Undergraduate student in Computer Science, by Universidade Federal do Ceará.
+							... If you have a project or creative need that I can help with, please get in touch.
+						</p>
+					</div>
 				</div>
 
-				<div class="col-md-6 text-justify ">
-					<h2>SKILLS</h2>
-					<p>My skills...</p>
+				<div class="row about-content">
+					<div class="col-md-6 text-justify">
+						<h2>PROFILE</h2>
+						<p>....</p>
 
-					<ul class="skill-bars">
-						<li>
-							<div class="progress progress-bar percent60"><span>60%</span></div>
-							<strong>HTML5</strong>
-						</li>
-						<li>
-							<div class="progress progress-bar percent60"><span>60%</span></div>
-							<strong>CSS3</strong>
-						</li>
-						<li>
-							<div class="progress progress-bar percent70"><span>70%</span></div>
-							<strong>Java</strong>
-						</li>
-						<li>
-							<div class="progress progress-bar percent50"><span>50%</span></div>
-							<strong>Flutter</strong>
-						</li>
-						<li>
-							<div class="progress progress-bar percent50"><span>50%</span></div>
-							<strong>Dart</strong>
-						</li>
-						<li>
-							<div class="progress progress-bar percent25"><span>25%</span></div>
-							<strong>PHP</strong>
-						</li>
-						<li>
-							<div class="progress progress-bar percent75 "><span>75%</span></div>
-							<strong>...</strong>
-						</li>
-						<li>
-							<div class=" progress progress-bar percent75" role="progressbar"><span>75%</span></div>
-							<strong>...</strong>
-						</li>
+						<ul class="info-list">
+							<li>
+								<strong>Fullname:</strong>
+								<span>Tathiane Ribeiro Souza</span>
+							</li>
+							<li>
+								<strong>Job:</strong>
+								<span>Freelancer, Frontend Developer</span>
+							</li>
+							<li>
+								<strong>Email:</strong>
+								<span>tathianesouza1@gmail.com</span>
+							</li>
+							<li>
+								<strong>Github:</strong>
+								<span><a href="https://github.com/Trsouza">github.com/Trsouza </a> </span>
+							</li>
+							<li>
+								<strong>Linkedin:</strong>
+								<span><a
+										href="https://www.linkedin.com/in/tathiane-ribeiro-souza/">linkedin.com/in/tathiane-ribeiro-souza/</a>
+								</span>
 
-					</ul> <!-- /skill-bars -->
+							</li>
+						</ul> <!-- /info-list -->
+					</div>
+
+					<div class="col-md-6 text-justify ">
+						<h2>SKILLS</h2>
+						<p>My skills...</p>
+
+						<ul class="skill-bars">
+							<li>
+								<div class="progress progress-bar percent60"><span>60%</span></div>
+								<strong>HTML5</strong>
+							</li>
+							<li>
+								<div class="progress progress-bar percent60"><span>60%</span></div>
+								<strong>CSS3</strong>
+							</li>
+							<li>
+								<div class="progress progress-bar percent65"><span>65%</span></div>
+								<strong>Java</strong>
+							</li>
+							<li>
+								<div class="progress progress-bar percent50"><span>50%</span></div>
+								<strong>Flutter</strong>
+							</li>
+							<li>
+								<div class="progress progress-bar percent50"><span>50%</span></div>
+								<strong>Dart</strong>
+							</li>
+							<li>
+								<div class="progress progress-bar percent25"><span>25%</span></div>
+								<strong>PHP</strong>
+							</li>
+							<li>
+								<div class=" progress progress-bar percent35" role="progressbar"><span>35%</span></div>
+								<strong>Machine Learning</strong>
+							</li>
+							<li>
+								<div class="progress progress-bar percent70 "><span>70%</span></div>
+								<strong>SQL</strong>
+							</li>
+
+						</ul> <!-- /skill-bars -->
+					</div>
 				</div>
 			</div>
 		</div>
-	</div> <!--End About Section -->
+	</section>
+	<!--End About Section -->
 
-	
+	<!-- Experiences Section
+	************************************************** -->
+	<section id=experiences>
+		<div class=" offset">
+			<div class="col-12 exper text-center  ">
+				<h3 class="heading">EXPERIENCES</h3>
+				<div class="heading-underline"></div>
+
+				<div class="overlay"></div>
+				<div class="row">
+					<div id="carouselWork" class="carousel slide  col-sm-6" data-ride="carousel">
+						<div class="carousel-inner" role="listbox">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselWork" data-slide-to="0" class="active"></li>
+								<!-- <li data-target="#carouselWork" data-slide-to="1"></li>
+					                        <li data-target="#carouselWork" data-slide-to="2"></li> -->
+							</ol>
+							<div class="carousel-item active text-center p-4">
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+							</div>
+						</div>
+					</div>
+					<div id="carouselEducation" class="carousel slide  col-sm-6" data-ride="carousel" data-interval="0">
+						<div class="carousel-inner" role="listbox">
+							<ol class="carousel-indicators">
+								<li data-target="#carouselEducation" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselEducation" data-slide-to="1"></li>
+								<li data-target="#carouselEducation" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-item active text-center p-4">
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+							</div>
+							<div class="carousel-item text-center p-4">
+
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+							</div>
+							<div class="carousel-item text-center p-4">
+
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+								<p>lorem ipsum (imagine longer text)</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Works Section
+	************************************************** -->
+<div id="clients" class="offset">
+
+	<!-- Start Jumbotron -->
+
+	<section id=works>
+		<div class="jumbotron">
+			<div class="col-sm-6 text-center workss">
+				<h3 class="heading">WORKS</h3>
+				<div class="heading-underline"></div>
+				<div id="carouselWor" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselWor" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselWor" data-slide-to="1"></li>
+						<li data-target="#carouselWor" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item">
+							<img class="d-block w-100" src="img/1.jpeg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="img/2.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="img/pc.jpeg" alt="First slide">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services
+   ************************************************** -->
+	<section id=services>
+		<div class="offset">
+			<div class="col-12 text-center work">
+				<h3 class="heading">SERVICES</h3>
+				<div class="heading-underline"></div>
+				<div>
+					<div class="card-deck">
+						<div class="card">
+							<img class="card-img-top" src="icon.png" alt="Imagem de capa do card">
+							<div class="card-body">
+								<h5 class="card-title">Título do card</h5>
+								<p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona
+									como uma introdução
+									a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+								<p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top" src="img/chess.jpeg" alt="Imagem de capa do card">
+							<div class="card-body">
+								<h5 class="card-title">Título do card</h5>
+								<p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma
+									introdução a um
+									conteúdo adicional.</p>
+								<p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top" src="img/keyboard.jpeg" alt="Imagem de capa do card">
+							<div class="card-body">
+								<h5 class="card-title">Título do card</h5>
+								<p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como
+									uma introdução a um
+									conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para
+									mostrar a altura igual, em
+									ação.</p>
+								<p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section> <!-- End Services -->
+
 	<!-- aq -->
 
+	<!-- Footer, contacts
+   ************************************************** -->
+	<footer id="contact">
 
-
-	<!-- Contact and footer
-   ================================================== -->
-	<section id="contact" class="offset">
-		<footer>
-
-			<div class="row text-center  ">
-				<div class="col-12">
-					<h3 class="heading">Contact Info</h3>
-					<div class="heading-underline"></div>
-					<!-- <h1>I'd Love To Hear From You.</h1>
-
-	 			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi
-	 				aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p> -->
-				</div>
-			</div> <!-- /section-experiences -->
-
-			<div class="row text-center">
-				<div class="col-4 ">
-					<div class="icon">
-						<i class="fa fa-map-marker" aria-hidden="true"></i>
-					</div>
-
-					<h5>Where to find me</h5>
-					<p>
-						61, Rua Monsenhor João Luis, Apt. 09<br>
-						Russas, CE<br>
-						62900-000 Brazil
-					</p>
-				</div>
-
-				<div class="col-4 ">
-					<div class="icon">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</div>
-
-					<h5>Email Me At</h5>
-					<p>tathianesouza1@gmail.com<br>
-						tathianers@alu.ufc.br
-					</p>
-				</div>
-
-				<div class="col-4 ">
-					<div class="icon">
-						<i class="fa fa-phone" aria-hidden="true"></i>
-					</div>
-
-					<h5>Call Me At</h5>
-					<p>
-						Mobile: (88) 992724829<br>
-					</p>
-				</div>
-			</div> <!-- /contact-->
-
-			<hr class="socket">
-			<div class="row">
-
-				<div class="col-md-9 tab-full">
-					<div class="copyright">
-						<span>© Copyright 2020 </span>
-						<span>Design by Tathiane</a></span>
-					</div>
-				</div>
-
-				<!-- <div class="col-md-3 pull-right social">
-
-				<ul class="footer-social">
-					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fab fa-behance"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-				</ul>
-
-			</div> -->
-			</div> <!-- /row -->
-			<div id="go-top">
-				<a href="#top" title="Back to Top">
-					<img src="img\icons\arrow-up.svg" alt="" width="25" height="30" title="Arrow-up">
-				</a>
+		<div class="row text-center  ">
+			<div class="col-12">
+				<h3 class="heading">Contact Info</h3>
+				<div class="heading-underline"></div>
+				<!-- <h1>I'd Love To Hear From You.</h1>
+		
+			 			<p> </p> -->
 			</div>
-		</footer>
-	</section>
+		</div> <!-- /experiences -->
+
+		<div class="row text-center">
+			<div class="col-sm-4 ">
+				<div class="icon">
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+				</div>
+
+				<h5>Where to find me</h5>
+				<p>
+					61, Rua Monsenhor João Luis, Apt. 09<br>
+					Russas, CE<br>
+					62900-000 Brazil
+				</p>
+			</div>
+
+			<div class="col-sm-4 ">
+				<div class="icon">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</div>
+
+				<h5>Email Me At</h5>
+				<p>tathianesouza1@gmail.com<br>
+					tathianers@alu.ufc.br
+				</p>
+			</div>
+
+			<div class="col-sm-4 ">
+				<div class="icon">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+				</div>
+
+				<h5>Call Me At</h5>
+				<p>
+					Mobile: (88) 992724829<br>
+				</p>
+			</div>
+		</div> <!-- /contact-->
+
+		<hr class="socket">
+		<div class="row">
+			<div class="col-sm-9 tab-full">
+				<div class="copyright">
+					<span>© Copyright 2020 </span>
+					<span>Design by Tathiane</a></span>
+				</div>
+			</div>
+		</div> <!-- /row -->
+		<div id="go-top">
+			<a href="#top" title="Back to Top">
+				<img src="img\icons\arrow-up.svg" alt="" width="25" height="30" title="Arrow-up">
+			</a>
+		</div>
+	</footer>
 
 	<!-- Script Source Files 
     ================================================== -->
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-	<!--- /Scripts-->
 
 </body>
+
 </html>
