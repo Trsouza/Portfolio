@@ -78,11 +78,11 @@ body {
   border-width: medium;
   border-radius: 0;
   padding: 0.6rem 1.3rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .bars span {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-family: 'Roboto',
     sans-serif;
   display: inline-block;
@@ -211,7 +211,7 @@ ul {
     .skill-bars li .percent95 { width: 95%;}
     .skill-bars li .percent100 { width: 100%;}
 
-    
+
 /* Experiences section 
 ==============================================================*/
 
@@ -291,7 +291,21 @@ footer {
   color: white;
   margin-top: 0.1rem;
   padding-top: 2rem;
+
 }
+  footer p {
+    color: #bcbaba;
+    font-size: 0.9rem;
+  }
+  footer h5 {
+    color: black;
+  }
+  footer .icon {
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+    fill: #cc005f;
+
+  }
   footer .copyright span {
     font-size: 0.7rem;
     font-family: 'Roboto',
@@ -299,14 +313,12 @@ footer {
     display: inline-block;
     color: #bcbaba;
   }
-
   footer .copyright span::after {
     content: "|";
     display: inline-block;
     padding: 0 0.5rem 0 0.5rem;
     color: rgba(255, 255, 255, 0.1);
   }
-
   footer .copyright span:last-child::after {
     display: none;
   }
@@ -368,13 +380,13 @@ footer {
 
 @media (max-width: 575px) {
   .caption h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
   .bars span {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
   .btn-lg {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     line-height: 1;
     padding: 0.4rem 0.8rem;
   }
@@ -394,6 +406,12 @@ footer {
     font-size: 0.8rem;
     line-height: 1.2;
     padding: 0.6rem 0.9rem;
+  }
+  .about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+    
   }
 }    
 
