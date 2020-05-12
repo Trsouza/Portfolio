@@ -1,13 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
 body {
   overflow-x: hidden;
-  font-family: 'Roboto',
+  font-family: 'Raleway',
   sans-serif;
-  color: #505962;
+  color:#202020;
+  /*  #505962; */
 }
 
 .offset:before {
@@ -18,14 +20,15 @@ body {
 }
 
 /* Navigation 
-==============================================================*/
+***************************************************************/
 
 .navbar {
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  background: rgba(0, 0, 0, 0.6) !important;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  background: rgba(0, 0, 0, 0.801) !important;
+   border-bottom: 2px solid #04c2c9;
 }
 .navbar-brand img {
   height: 2rem;
@@ -35,7 +38,7 @@ body {
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #fff;
-  padding-top: 0.8rem;
+  padding-top: 0.5rem;
 }
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -43,7 +46,7 @@ body {
 }
 
 /* Intro 
-==============================================================*/
+***************************************************************/
 
 .home-inner {
   background-image: url(img/1.jpeg);
@@ -54,37 +57,34 @@ body {
   position: absolute;
   top: 38%;
   z-index: 1;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
 }
   .caption h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.1rem;
     text-shadow: 0.1rem 0.1rem 0.8rem black;
     padding-bottom: 1rem;
-    font-family: 'Lora', serif;
+    /* font-family: 'Lora', serif; */
+    font-family: 'Raleway',
+    sans-serif;
     text-transform: capitalize;
-    
   }
-
-  .caption h3 {
-    font-size: 2rem;
-    text-shadow: 0.1rem 0.1rem 0.5rem black;
-    padding-bottom: 1.6rem;
-  }
-
+.colorName {
+  color: #cc005f;
+  font-weight: bolder;
+}
 .btn-lg {
   border-width: medium;
   border-radius: 0;
   padding: 0.6rem 1.3rem;
   font-size: 1.3rem;
+  margin-top: 0.8rem;
 }
 
 .bars span {
   font-size: 1rem;
-  font-family: 'Roboto',
-    sans-serif;
   display: inline-block;
 }
 .bars span::after {
@@ -97,15 +97,15 @@ body {
   content: "|";
   display: inline-block;
   padding: 0 0.5rem 0 1rem;
-  color: #cc005f;
+  color: #04c2c9;
 }
 
 /* About section 
-==============================================================*/
+***************************************************************/
 
 .about {
   width: 75%;
-  margin: 1.5rem auto;
+  margin: 3rem auto;
   /* padding-top: 2rem; */
 }
 
@@ -113,8 +113,7 @@ body {
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
-    margin: .9rem 0 0 0;
-    float: left;
+    /* float: left; */
   }
 
   .about h1 {
@@ -128,7 +127,8 @@ body {
 
   .about h2{
     font-size: 1.3rem;
-    color: #313131;
+    color: #cc005f;
+    font-weight: 400;
   }
 
 .about-content .info-list li {
@@ -137,7 +137,6 @@ body {
 }
 
   .about-content .info-list li strong {
-    color: #313131;
     text-transform: uppercase;
     letter-spacing: .1rem;
     line-height: 2rem;
@@ -146,7 +145,7 @@ body {
 
   .about-content .info-list li span {
     display: block;
-    color: #888888;
+    color: #04c2c9;
     line-height: 1;
   }
 
@@ -213,48 +212,67 @@ ul {
 
 
 /* Experiences section 
-==============================================================*/
-
-/* .exper img {
-  height: 15rem;
-  width: 25rem;
-} */
+****************************************************************/
 
  .exper {
+  /* margin-top: 0.1rem; */
   background: #40474e;
-  margin: 1.5rem auto;
+  /* margin: 1.5rem auto; */
   color: white;
   /* padding-top: 2rem; */
 }
+  .exper h2 {
+    font-size: 1.3rem;
+    margin: -0.5rem auto;
+    color: #000000;
+    font-weight: 600;
+  }
+  .exper .icon {
+    margin-top: -1rem;
+    padding-bottom: 1rem;
+  }
+  .exper p {
+    color: #e2dfdf;
+    font-size: 0.95rem;
+  }
 
-
-/* Works section 
-==============================================================*/
-
-.workss {
-  width: 75%;
-  margin: 1.5rem auto;
-
-}
-
-/* .workss img {
-  height: 35rem;
-  width: 5rem;
-}  */
-
-.carousel-item.active,
+.exper .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
   height: 13rem;
 }
 
-/* .carousel-inner {
-    background-color:#e5c0d1;
-} */
-
 .carousel-indicators li {
   background-color: #cc005f;
+}
+
+
+/* Projects section 
+****************************************************************/
+
+.projectss {
+  /* width: 75%; */
+  margin: 1.5rem auto;
+
+}
+
+.image {
+  /* height: 350px; 
+  width: 500px; */
+  /* margin-bottom: 10px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 450px; */
+  height: 300px;
+} 
+
+.projectss .carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  /* display: block; */
+  height: 350px;
 }
 
 .jumbotron {
@@ -267,22 +285,28 @@ h3.heading {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .heading-underline {
   width: 3rem;
-  height: 0.2rem;
-  background-color: #cc005f;
-  margin: 0 auto 2rem;
+  height: 0.15rem;
+  background-color:#04c2c9;
+  margin: 0rem auto 1rem;
 }
 
+/* Services 
+***************************************************************/
+.serv h5 {
+  color: #cc005f;
+  margin-top: 1rem;
+}
 
 /*Contact section and footer
-==============================================================*/
+***************************************************************/
 hr.socket {
   width: 100%;
-  border-top: 0.1rem solid #cc005f;
+  border-top: 0.1rem solid #04c2c9;
   margin-bottom: -0.03rem;
 }
 
@@ -299,17 +323,14 @@ footer {
   }
   footer h5 {
     color: black;
+    font-weight: 600;
   }
   footer .icon {
     margin-top: -1rem;
     padding-bottom: 1rem;
-    fill: #cc005f;
-
   }
   footer .copyright span {
     font-size: 0.7rem;
-    font-family: 'Roboto',
-    sans-serif;
     display: inline-block;
     color: #bcbaba;
   }
@@ -366,7 +387,6 @@ footer {
     display: block;
     height: 3.6rem;
     width: 2.9rem;
-    /* line-height: 3.6rem; */
     text-align: center;
     background: #cc005f;
     color: #FFFFFF;
@@ -375,7 +395,8 @@ footer {
         margin-top: 1.2rem;
     }
     #go-top a:hover {
-      background: #000000;
+      background: #04c2c9;
+      /*  #000000; */
     }
 
 @media (max-width: 575px) {
@@ -392,6 +413,11 @@ footer {
   }
   h3.heading{
     font-size: 1.2rem;
+  }
+  .imageP {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
   }
 }
 
@@ -417,7 +443,7 @@ footer {
 
 @media (min-width: 768px) {
   .caption h1 {
-    font-size: 3.8rem;
+    font-size: 2.5rem;
   }
   h3.heading {
     font-size: 1.6rem;
