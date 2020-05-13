@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
@@ -17,6 +16,14 @@ body {
   content: "";
   height: 3rem;
   margin-top: -3rem;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.15rem;
+  background-color: #04c2c9;
+  margin: 0rem auto 1rem;
+
 }
 
 /* Navigation 
@@ -61,7 +68,7 @@ body {
   text-transform: uppercase;
 }
   .caption h1 {
-    font-size: 3rem;
+    font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: 0.1rem;
     text-shadow: 0.1rem 0.1rem 0.8rem black;
@@ -79,12 +86,14 @@ body {
   border-width: medium;
   border-radius: 0;
   padding: 0.6rem 1.3rem;
-  font-size: 1.3rem;
+  font-size: 0.7rem;
   margin-top: 0.8rem;
+  line-height: 1;
+  padding: 0.4rem 0.8rem;
 }
 
 .bars span {
-  font-size: 1rem;
+  font-size: 0.75rem;
   display: inline-block;
 }
 .bars span::after {
@@ -114,18 +123,18 @@ body {
     width: 9rem;
     border-radius: 50%;
     /* float: left; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
   }
-
   .about h1 {
     font-size: 2.4rem;
   }
-
   .about h4 {
     text-transform: uppercase;
     color: #cc005f;
   }
-
-  .about h2{
+  .about h3{
     font-size: 1.3rem;
     color: #cc005f;
     font-weight: 400;
@@ -164,7 +173,7 @@ ul {
 }
 
   .skill-bars li {
-    height: .8rem;  /* */
+    height: .8rem;  
     background: #a1a1a1;
     width: 100%;
     margin-bottom: 2.5rem;
@@ -215,13 +224,10 @@ ul {
 ****************************************************************/
 
  .exper {
-  /* margin-top: 0.1rem; */
   background: #40474e;
-  /* margin: 1.5rem auto; */
   color: white;
-  /* padding-top: 2rem; */
 }
-  .exper h2 {
+  .exper h3 {
     font-size: 1.3rem;
     margin: -0.5rem auto;
     color: #000000;
@@ -240,39 +246,102 @@ ul {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
-  height: 13rem;
+  height: 14.5rem;
 }
 
 .carousel-indicators li {
-  background-color: #cc005f;
+  background-color: #04c2c981;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
+.carousel-indicators .active {
+   background-color: #cc005f;
+ }
 
 
 /* Projects section 
 ****************************************************************/
 
 .projectss {
-  /* width: 75%; */
   margin: 1.5rem auto;
-
 }
 
 .image {
-  /* height: 350px; 
-  width: 500px; */
-  /* margin-bottom: 10px; */
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* width: 450px; */
-  height: 300px;
+  height: 370px;
 } 
 
 .projectss .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
   /* display: block; */
-  height: 350px;
+  height: 415px;
+}
+.projectss h3 {
+  font-size: 1.3rem;
+  color: #000000;
+  font-weight: 600;
+  margin-top: 6rem;
+}
+h2.heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+.projectss h4 {
+  font-size: 1rem;
+  color: #cc005f;
+}
+.projectss .btn-lg {
+  border-radius: 0;
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  line-height: 1;
+  padding: 0.4rem 0.8rem;
+  background: #fff;
+  border: 2px solid #cc005f;
+  text-transform: uppercase;
+  color: #ffff
+}
+
+.projectss .btn-lg:hover,
+.projectss .btn-lg:focus {
+  background: #FF0077;
+  border: 2px solid #ffff;
+}
+
+.container2 {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* height: 100%; */
+  /* width: 100%; */
+  width: 220px;
+  opacity: 0;
+  transition: .7s ease;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container2:hover .overlay2 {
+  opacity: 1;
 }
 
 .jumbotron {
@@ -281,26 +350,25 @@ ul {
   /* border-radius: 0; */
 }
 
-h3.heading {
-  font-size: 1.9rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 3rem;
+.modal-title {
+  color: #cc005f;
+  font-weight: 900;
 }
 
-.heading-underline {
-  width: 3rem;
-  height: 0.15rem;
-  background-color:#04c2c9;
-  margin: 0rem auto 1rem;
-}
+
+
 
 /* Services 
 ***************************************************************/
-.serv h5 {
-  color: #cc005f;
-  margin-top: 1rem;
+
+.serv {
+  margin-bottom: 2rem;
 }
+.serv h5 {
+    color: #cc005f;
+    margin-top: 1rem;
+  }
+
 
 /*Contact section and footer
 ***************************************************************/
@@ -399,27 +467,7 @@ footer {
       /*  #000000; */
     }
 
-@media (max-width: 575px) {
-  .caption h1 {
-    font-size: 1.7rem;
-  }
-  .bars span {
-    font-size: 0.7rem;
-  }
-  .btn-lg {
-    font-size: 0.7rem;
-    line-height: 1;
-    padding: 0.4rem 0.8rem;
-  }
-  h3.heading{
-    font-size: 1.2rem;
-  }
-  .imageP {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-  }
-}
+/**************** BOOTSTRAP BREAK POINTS: ****************/    
 
 @media (min-width: 576px) {
   .caption h1 {
@@ -429,6 +477,11 @@ footer {
     font-size: 0.8rem;
   }
   .btn-lg {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    padding: 0.6rem 0.9rem;
+  }
+  .projectss .btn-lg {
     font-size: 0.8rem;
     line-height: 1.2;
     padding: 0.6rem 0.9rem;
@@ -445,8 +498,13 @@ footer {
   .caption h1 {
     font-size: 2.5rem;
   }
-  h3.heading {
-    font-size: 1.6rem;
+  h2.heading {
+    font-size: 1.9rem;
   } 
-}
+  .projectss .btn-lg {
+    font-size: 1rem;
+    line-height: 1.2;
+    /* padding: 0.8rem 1rem; */
 
+  }
+}

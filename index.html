@@ -98,7 +98,7 @@
 		<div class="offset about">
 			<div class=" text-center">
 				<div class="heading-underline"></div>
-				<h3 class="heading"> ABOUT</h3>
+				<h2 class="heading"> ABOUT</h2>
 
 			</div>
 			<!-- <h2>Let me introduce myself.</h2> -->
@@ -119,7 +119,7 @@
 			<div class="container-fluid">
 				<div class="row about-content">
 					<div class="col-sm-6 text-justify">
-						<h2>PROFILE</h2>
+						<h3>PROFILE</h3>
 						<!-- <p>....</p> -->
 
 						<ul class="info-list">
@@ -150,7 +150,7 @@
 					</div>
 
 					<div class="col-sm-6 text-justify ">
-						<h2>SKILLS</h2>
+						<h3>SKILLS</h3>
 						<!-- <p>My skills...</p> -->
 
 						<ul class="skill-bars">
@@ -203,7 +203,7 @@
 				<div class="row">
 					<div class="col-12 text-center  ">
 						<div class="heading-underline"></div>
-						<h3 class="heading">EXPERIENCES</h3>
+						<h2 class="heading">EXPERIENCES</h2>
 					</div>
 				</div>
 			</div>
@@ -215,7 +215,7 @@
 						<div class="icon">
 							<img src="img/icons/briefcase-solid.svg" alt="" width="25" height="30">
 						</div>
-						<h2>Work Experience</h2>
+						<h3>Work Experience</h3>
 						<div class="carousel-inner" role="listbox">
 							<ol class="carousel-indicators">
 
@@ -224,7 +224,7 @@
 							<div class="carousel-item active text-center p-4">
 								<p>March 2020 - Present</p>
 								<p>Núcleo de Soluções de Software (N2S)</p>
-								<p>Web Developer- Internship</p>
+								<p>Web Developer - Internship</p>
 							</div>
 						</div>
 					</div>
@@ -233,7 +233,7 @@
 						<div class="icon">
 							<img src="img/icons/graduation-cap-solid.svg" alt="" width="30" height="30">
 						</div>
-						<h2>Education</h2>
+						<h3>Education</h3>
 						<div class="carousel-inner" role="listbox">
 							<ol class="carousel-indicators">
 								<li data-target="#carouselEducation" data-slide-to="0" class="active"></li>
@@ -273,29 +273,73 @@
 
 	<!-- Projects Section
 	************************************************** -->
-	<section id=projects>
+	<section id=projects id=portfolio>
 		<div class=" container-fluid jumbotron">
 			<div class="row">
-				<div class="col-sm-6 text-center projectss">
+				<div class="col-sm-12 text-center projectss">
 					<div class="heading-underline"></div>
-					<h3 class="heading">PROJECTS</h3>
+					<h2 class="heading">PROJECTS</h2>
 
-					<div id="carouselWor" class="carousel slide" data-ride="carousel">
+					<div id="carouselWor" class="carousel slide" data-ride="carousel" data-interval="0">
 						<ol class="carousel-indicators">
 							<li data-target="#carouselWor" data-slide-to="0" class="active"></li>
 							<li data-target="#carouselWor" data-slide-to="1"></li>
 							<li data-target="#carouselWor" data-slide-to="2"></li>
 						</ol>
 						<div class="carousel-inner">
-							<div class="carousel-item">
-								<img class="image img-fluid" src="img/anny.png" alt="First slide">
-							</div>
-							<div class="carousel-item">
-								<img class=" image img-fluid" src="img/anny.png" alt="Second slide">
-							</div>
 							<div class="carousel-item active">
-								<img class="image img-fluid" src="img/euvou.png" alt="First slide">
+								<div class="container2">
+									<img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" alt="Avatar"
+										class="image img-fluid">
+									<div class="overlay2">
+										<div>
+											<h3>TRS</h3>
+											<h4>Python</h4>
+											<a class="btn btn-outline-light btn-lg" data-toggle="modal"
+												data-target="#projectsModal">
+												Learn More
+											</a>
+										</div>
+									</div>
+								</div>
 							</div>
+
+							<div class="carousel-item ">
+								<div class="container2">
+									<img class=" image img-fluid" src="img/anny.png" alt="Second slide">
+
+									<div class="overlay2">
+										<div>
+											<h3>Anny Cosméticos</h3>
+											<h4>Flutter</h4>
+											<a class="btn btn-outline-light btn-lg" data-toggle="modal"
+												data-target="#projectsModal">
+												Learn More
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item ">
+								<div class="container2">
+									<img class="image img-fluid" src="img/euvou1.png" alt="First slide">
+									<div class="overlay2">
+										<div>
+											<h3>EUvou</h3>
+											<h4>Java / Node</h4>
+											<a class="btn btn-outline-light btn-lg" data-toggle="modal"
+												data-target="#projectsModal">
+												Learn More
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="carousel-item active">
+								<img class="image img-fluid" src="img/euvou1.png" alt="First slide">
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -311,14 +355,14 @@
 				<div class="row">
 					<div class="col-12 text-center serv">
 						<div class="heading-underline"></div>
-						<h3 class="heading">SERVICES</h3>
+						<h2 class="heading">SERVICES</h2>
 
 						<div class="card-deck">
 							<div class="card">
 								<!-- <img class="card-img-top" src="icon.png" alt="Imagem de capa do card"> -->
 								<div class="card-body">
 									<div class="icon">
-										<img src="img/icons/mobile.svg" alt="" width="25" height="30">
+										<img src="img/icons/mobile.svg" alt="mobile icon" width="25" height="30">
 									</div>
 									<h5 class="card-title">Mobile Developer</h5>
 
@@ -332,22 +376,22 @@
 							<div class="card">
 								<div class="card-body">
 									<div class="icon">
-										<img src="img/icons/laptop.svg" alt="" width="25" height="30">
+										<img src="img/icons/laptop.svg" alt="laptop icon" width="25" height="30">
 									</div>
 									<h5 class="card-title">Web Developer</h5>
 									<p class="card-text">Este é um card com suporte a texto embaixo, que funciona como
 										.</p>
-									</p>
+
 								</div>
 							</div>
 							<div class="card">
 								<div class="card-body">
 									<div class="icon">
-										<img src="img/icons/machine.svg" alt="" width="25" height="30">
+										<img src="img/icons/machine.svg" alt="machine learning icon" width="25" height="30">
 									</div>
 									<h5 class="card-title">Machine Learning</h5>
 									<p class="card-text">Este é um .</p>
-									</p>
+
 								</div>
 							</div>
 						</div>
@@ -363,7 +407,7 @@
 		<div class="row text-center  ">
 			<div class="col-12">
 				<div class="heading-underline"></div>
-				<h3 class="heading">Contact Info</h3>
+				<h2 class="heading">Contact Info</h2>
 
 				<!-- <h1> .</h1>
 		
@@ -426,6 +470,30 @@
 			</a>
 		</div>
 	</footer>
+
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="projectsModal" tabindex="-1" role="dialog" aria-labelledby="projectsModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="projectsModalLabel">EUvou</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<!-- <span aria-hidden="true">&times;</span> --> <!--  btn close-->
+					</button>
+				</div>
+				<div class="modal-body">
+					...
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<!-- <button type="button" class="btn btn-primary">Save</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Script Source Files 
     ================================================== -->

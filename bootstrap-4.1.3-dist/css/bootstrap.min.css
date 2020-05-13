@@ -2672,14 +2672,14 @@
 
  .btn-secondary {
      color: #fff;
-     background-color: #6c757d;
-     border-color: #6c757d
+     background-color: #04c2c9;
+     border-color: #04c2c9;
  }
 
  .btn-secondary:hover {
      color: #fff;
-     background-color: #5a6268;
-     border-color: #545b62
+     background-color: #05a5aa;
+     border-color: #05a5aa;
  }
 
  .btn-secondary.focus,
@@ -4798,7 +4798,8 @@
      background-clip: border-box;
      border: 1px solid #04c2c9;
      /* rgba(0, 0, 0, .125); */
-     border-radius: .25rem
+     border-radius: .25rem;
+     
  }
 
  .card>hr {
@@ -6500,7 +6501,7 @@
      margin-left: 3px;
      text-indent: -999px;
      cursor: pointer;
-     background-color: rgba(255, 255, 255, .5)
+     background-color: rgba(255, 255, 255, .5);
  }
 
  .carousel-indicators li::before {
