@@ -56,7 +56,7 @@ body {
 ***************************************************************/
 
 .home-inner {
-  background-image: url(img/1.jpeg);
+  background-image: url(img/cover.png);
 }
 .caption {
   width: 100%;
@@ -135,9 +135,12 @@ body {
     color: #cc005f;
   }
   .about h3{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: #cc005f;
     font-weight: 400;
+  }
+  .lead {
+    font-size: 1.1rem;
   }
 
 .about-content .info-list li {
@@ -147,7 +150,7 @@ body {
 
   .about-content .info-list li strong {
     text-transform: uppercase;
-    letter-spacing: .1rem;
+    letter-spacing: .08rem;
     line-height: 2rem;
     font-size: 0.9rem;
   }
@@ -173,7 +176,7 @@ ul {
 }
 
   .skill-bars li {
-    height: .8rem;  
+    height: .9rem;  
     background: #a1a1a1;
     width: 100%;
     margin-bottom: 2.5rem;
@@ -185,9 +188,8 @@ ul {
       position: absolute;
       left: 0;
       top: -1.3rem;
-      color: #313131;
       text-transform: uppercase;
-      letter-spacing: .1rem;
+      letter-spacing: .08rem;
       line-height: 1rem;
       font-size: 0.9rem;
     }
@@ -196,6 +198,9 @@ ul {
       background: #40474e;
       position: relative;
       height: 100%;
+    }
+    .skill-bars li span {
+      font-size: 0.65rem;
     }
 
     .skill-bars li .percent5 { width: 5%;}
@@ -254,11 +259,11 @@ ul {
   border-radius: 50%;
   width: 10px;
   height: 10px;
+  margin: auto 0.4rem;
 }
 .carousel-indicators .active {
    background-color: #cc005f;
  }
-
 
 /* Projects section 
 ****************************************************************/
@@ -287,7 +292,7 @@ ul {
   margin-top: 6rem;
 }
 h2.heading {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 3rem;
@@ -471,7 +476,7 @@ footer {
 
 @media (min-width: 576px) {
   .caption h1 {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
   .bars span {
     font-size: 0.8rem;
@@ -501,10 +506,22 @@ footer {
   h2.heading {
     font-size: 1.9rem;
   } 
+  .about h3 {
+    font-size: 1.5rem;
+  }
+  .lead {
+     font-size: 1.2rem;
+  }
   .projectss .btn-lg {
     font-size: 1rem;
     line-height: 1.2;
     /* padding: 0.8rem 1rem; */
 
+  }
+  .exper h3 {
+    font-size: 1.4rem;
+  }
+  .exper p {
+  font-size: 1rem;
   }
 }
