@@ -8,7 +8,6 @@ body {
   font-family: 'Raleway',
   sans-serif;
   color:#202020;
-  /*  #505962; */
 }
 
 .offset:before {
@@ -113,16 +112,13 @@ body {
 ***************************************************************/
 
 .about {
-  width: 75%;
   margin: 3rem auto;
-  /* padding-top: 2rem; */
 }
 
   .about img {
     height: 9rem;
     width: 9rem;
     border-radius: 50%;
-    /* float: left; */
     display: block;
     margin-left: auto;
     margin-right: auto
@@ -251,9 +247,8 @@ ul {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
-  height: 14.5rem;
+  height: 12rem;
 }
-
 .carousel-indicators li {
   background-color: #04c2c981;
   border-radius: 50%;
@@ -335,8 +330,6 @@ h2.heading {
   bottom: 0;
   left: 0;
   right: 0;
-  /* height: 100%; */
-  /* width: 100%; */
   width: 220px;
   opacity: 0;
   transition: .7s ease;
@@ -350,18 +343,13 @@ h2.heading {
 }
 
 .jumbotron {
-  /* margin-bottom: 0; */
   padding: 1rem 0 1rem;
-  /* border-radius: 0; */
 }
 
 .modal-title {
   color: #cc005f;
   font-weight: 900;
 }
-
-
-
 
 /* Services 
 ***************************************************************/
@@ -384,6 +372,7 @@ hr.socket {
 }
 
 footer {
+  text-align: center;
   background-color: #40474e;
   color: white;
   margin-top: 0.1rem;
@@ -404,45 +393,18 @@ footer {
   }
   footer .copyright span {
     font-size: 0.7rem;
-    display: inline-block;
+    display: block;
     color: #bcbaba;
   }
   footer .copyright span::after {
     content: "|";
     display: inline-block;
     padding: 0 0.5rem 0 0.5rem;
-    color: rgba(255, 255, 255, 0.1);
+    color: #cc005f;
   }
   footer .copyright span:last-child::after {
     display: none;
   }
-
-  
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:768px) {
-  footer {
-    text-align: center;
-  }
-
-  footer .social {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-
-  footer .copyright span {
-    display: block;
-  }
-
-  footer .copyright span::after {
-    display: none;
-  }
-}
 
 
 /**
@@ -474,6 +436,9 @@ footer {
 
 /**************** BOOTSTRAP BREAK POINTS: ****************/    
 
+  footer .copyright span::after {
+    display: none;
+  }
 @media (min-width: 576px) {
   .caption h1 {
       font-size: 2.2rem;
@@ -486,6 +451,9 @@ footer {
     line-height: 1.2;
     padding: 0.6rem 0.9rem;
   }
+  .about {
+    width: 75%;
+  }
   .projectss .btn-lg {
     font-size: 0.8rem;
     line-height: 1.2;
@@ -495,7 +463,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto
-    
   }
 }    
 
@@ -516,7 +483,6 @@ footer {
     font-size: 1rem;
     line-height: 1.2;
     /* padding: 0.8rem 1rem; */
-
   }
   .exper h3 {
     font-size: 1.4rem;
@@ -524,4 +490,14 @@ footer {
   .exper p {
   font-size: 1rem;
   }
+  footer {
+    text-align: left;
+  }
+  footer .copyright span {
+    display: inline;
+  }
+  footer .copyright span::after {
+    display: inline;
+  }
 }
+ 
