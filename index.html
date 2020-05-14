@@ -6,7 +6,7 @@
 	<!--- Basic page needs
 	************************************************** -->
 	<meta charset="utf-8" />
-	<title>Portfolio Tathiane</title>
+	<title>Portfolio | Tathiane</title>
 
 	<!-- Mobile specific metas
 	************************************************** -->
@@ -538,9 +538,9 @@
 				</div>
 			</div>
 		</div> <!-- /row -->
-		<div id="go-top">
+		<div class="go-top">
 			<a href="#top" title="Back to Top">
-				<img src="img/icons/arrow-up.svg" alt="" width="25" height="30" title="Arrow-up">
+				<img src="img/icons/bi-chevron-up.svg" alt="Arrow up icon" width="22" height="30" title="Arrow-up">
 			</a>
 		</div>
 	</footer>
@@ -554,3 +554,15 @@
 </body>
 
 </html>
+
+
+<script>
+	$(window).scroll(function () {
+			nScrollPosition = $(window).scrollTop();
+			if (nScrollPosition >= 10) {
+				$(".go-top").css("display", "block");
+			} else {
+				$(".go-top").css("display", "none");
+			}
+		});
+</script>

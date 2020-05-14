@@ -406,30 +406,39 @@ footer {
     display: none;
   }
 
-
 /**
  * got-top 
  * ------------------------------------------------------------------- 
  */
- #go-top {
-   position: fixed;
-   bottom: 0;
-   right: 0;
-   z-index: 100;
- }
-  #go-top a {
+ 
+ /* #go-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+ } */
+  .go-top {
+    /* display: block; */
+    display: none;
     border: 0 none;
-    display: block;
-    height: 3.6rem;
-    width: 2.9rem;
+    border-radius: 10px;
+    height: 2.8rem;
+    width: 2.8rem;
+    margin: 0.4rem;
     text-align: center;
     background: #cc005f;
     color: #FFFFFF;
+    position: fixed;
+    display: none;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+
   }
-    #go-top a img {
-        margin-top: 1.2rem;
+    .go-top a img {
+        margin-top: 0.5rem;
     }
-    #go-top a:hover {
+    .go-top:hover {
       background: #04c2c9;
       /*  #000000; */
     }
@@ -474,7 +483,7 @@ footer {
     font-size: 1.9rem;
   } 
   .about h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .lead {
      font-size: 1.2rem;
@@ -500,4 +509,4 @@ footer {
     display: inline;
   }
 }
- 
+
