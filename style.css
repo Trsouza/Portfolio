@@ -226,7 +226,7 @@ ul {
 
  .exper {
   background: #40474e;
-  color: white;
+  color: #FFFFFF
 }
   .exper h3 {
     font-size: 1.3rem;
@@ -333,7 +333,7 @@ h2.heading {
   width: 220px;
   opacity: 0;
   transition: .7s ease;
-  background-color: white;
+  background-color: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
 }
@@ -374,7 +374,7 @@ hr.socket {
 footer {
   text-align: center;
   background-color: #40474e;
-  color: white;
+  color: #FFFFFF;
   margin-top: 0.1rem;
   padding-top: 2rem;
 
@@ -383,11 +383,11 @@ footer {
     margin-bottom: 1rem;
   }
   footer p {
-    color: #e4e2e2;
+    color: #d4d3d3;
     font-size: 0.9rem;
   }
   footer h5 {
-    color: black;
+    color: #000000;
     font-weight: 600;
   }
   
@@ -396,14 +396,10 @@ footer {
     padding-bottom: 0.5rem;
   }
 
-  footer .social {
-    color: #e4e2e2;
-  }
-
   footer svg.svg-inline--fa {
     font-size: 1.6rem;
     margin: 1.2rem 0.1rem 1.2rem 0;
-    color: white;
+    color: #d4d3d3;
 
   }
 
@@ -444,15 +440,14 @@ footer {
  } */
   .go-top {
     /* display: block; */
-    display: none;
-    border: 0 none;
-    border-radius: 10px;
+    /* border: 0 none;
+    /* border-radius: 10px; 
+    background: #cc005fad;
+    color: #FFFFFF;   */
     height: 2.6rem;
     width: 2.6rem;
-    margin: 0.3rem;
     text-align: center;
-    background: #cc005fad;
-    color: #FFFFFF;
+    margin: 0.3rem; 
     position: fixed;
     display: none;
     bottom: 0;
@@ -460,13 +455,13 @@ footer {
     z-index: 100;
 
   }
-
     .go-top svg.svg-inline--fa {
       margin: 0 0 -1rem 0;
-
+      color: #FF0077;
     }
-    .go-top:hover {
-      background: #04c2c9a8;
+    .go-top svg.svg-inline--fa:hover {
+      color: #FFFFFF !important;
+      /* #04c2c9a8; */
     }
 
 /**************** BOOTSTRAP BREAK POINTS: ****************/    
