@@ -383,7 +383,8 @@
 											</button>
 										</div>
 										<div class="modal-body">
-											<p>Application to manage frequencies and evaluations of presentations at the event.</p>
+											<p>Application to manage frequencies and evaluations of presentations at the
+												event.</p>
 										</div>
 										<div class="modal-footer">
 											<button type="button" class="btn btn-secondary"
@@ -479,13 +480,11 @@
 	<!-- Footer, contacts
    ************************************************** -->
 	<footer id="contact">
-		<div class="row text-center  ">
+		<div class="row text-center">
 			<div class="col-12">
 				<div class="heading-underline"></div>
 				<h2 class="heading">Contact Info</h2>
-
 				<!-- <h1> .</h1>
-		
 			 			<p> </p> -->
 			</div>
 		</div> <!--  -->
@@ -493,44 +492,42 @@
 		<div class="row text-center">
 			<div class="col-sm-4 ">
 				<div class="icon">
-					<!-- <i class="fa fa-map-marker" aria-hidden="true"></i> -->
-					<img src="img/icons/map-marker.svg" alt="" width="25" height="30">
+					<!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
+					<img src="img/icons/envelope.svg" alt="" width="25" height="30">
 				</div>
 
-				<h5>Where to find me</h5>
+				<h5>Get in touch</h5>
+				<p>tathianesouza1@gmail.com<br>
+				</p>
+			</div>
+
+			<div class="col-sm-4 ">
+				<div>
+					<h6>Social media</h6>
+					<a href="https://www.linkedin.com/in/tathiane-ribeiro-souza/" target="_blank"><i
+							class="fab fa-linkedin social" alt="Linkedin profile" title="Linkedin profile"></i></a>
+					<a href="https://github.com/Trsouza" target="_blank"><i class="fab fa-github-square social"
+							alt="Github profile" title="Github profile"></i></a>
+					<a href="https://www.facebook.com/annyy12/" target="_blank"><i class="fab fa-facebook-square social"
+							alt="Facebook profile" title="Facebook profile"></i></a>
+				</div>
+			</div>
+
+			<div class="col-sm-4 ">
+				<div class="icon">
+					<img src="img/icons/map-marker.svg" alt="location icon" width="25" height="30">
+				</div>
+				<h5>Where we are</h5>
 				<p>
 					<!-- 61, Rua Monsenhor João Luis, Apt. 09<br> -->
 					Russas, CE<br>
 					Brazil
 				</p>
 			</div>
-
-			<div class="col-sm-4 ">
-				<div class="icon">
-					<!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->
-					<img src="img/icons/envelope.svg" alt="" width="25" height="30">
-				</div>
-
-				<h5>Email Me At</h5>
-				<p>tathianesouza1@gmail.com<br>
-				</p>
-			</div>
-
-			<div class="col-sm-4 ">
-				<div class="icon">
-					<!-- <i class="fa fa-phone" aria-hidden="true"></i> -->
-					<img src="img/icons/phone.svg" alt="" width="25" height="30">
-				</div>
-
-				<h5>Call Me At</h5>
-				<p>
-					(+55) 88 992724829<br>
-				</p>
-			</div>
 		</div> <!-- /contact-->
 
 		<hr class="socket">
-		<div class="row">
+		<div class="row ">
 			<div class="col-sm-9 ">
 				<div class="copyright">
 					<span>© Copyright 2020 </span>
@@ -539,8 +536,9 @@
 			</div>
 		</div> <!-- /row -->
 		<div class="go-top">
-			<a href="#top" title="Back to Top">
-				<img src="img/icons/bi-chevron-up.svg" alt="Arrow up icon" width="22" height="30" title="Arrow-up">
+			<a  href="#home" title="Back to Top">
+				<!-- <img src="img/icons/bi-chevron-up.svg" alt="Arrow up icon" width="22" height="30" title="Arrow-up"> -->
+				<i class="fas fa-angle-double-up marg"></i>
 			</a>
 		</div>
 	</footer>
@@ -558,11 +556,11 @@
 
 <script>
 	$(window).scroll(function () {
-			nScrollPosition = $(window).scrollTop();
-			if (nScrollPosition >= 10) {
-				$(".go-top").css("display", "block");
-			} else {
-				$(".go-top").css("display", "none");
-			}
-		});
+		nScrollPosition = $(window).scrollTop();
+		if (nScrollPosition >= 10) {
+			$(".go-top").css("display", "block");
+		} else {
+			$(".go-top").css("display", "none");
+		}
+	});
 </script>

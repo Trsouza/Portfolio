@@ -368,7 +368,7 @@ h2.heading {
 hr.socket {
   width: 100%;
   border-top: 0.1rem solid #04c2c9;
-  margin-bottom: -0.03rem;
+  margin-bottom: -0.4rem;
 }
 
 footer {
@@ -379,22 +379,42 @@ footer {
   padding-top: 2rem;
 
 }
+  footer h2.heading {
+    margin-bottom: 1rem;
+  }
   footer p {
-    color: #bcbaba;
+    color: #e4e2e2;
     font-size: 0.9rem;
   }
   footer h5 {
     color: black;
     font-weight: 600;
   }
+  
   footer .icon {
     margin-top: -1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
+
+  footer .social {
+    color: #e4e2e2;
+  }
+
+  footer svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem 0.1rem 1.2rem 0;
+    color: white;
+
+  }
+
+  footer svg.svg-inline--fa:hover {
+    color:  #cc005f !important;
+  }
+
   footer .copyright span {
     font-size: 0.7rem;
     display: block;
-    color: #bcbaba;
+    color: #cccaca;
   }
   footer .copyright span::after {
     content: "|";
@@ -404,6 +424,11 @@ footer {
   }
   footer .copyright span:last-child::after {
     display: none;
+  }
+  footer h6 {
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: -0.5rem;
   }
 
 /**
@@ -422,11 +447,11 @@ footer {
     display: none;
     border: 0 none;
     border-radius: 10px;
-    height: 2.8rem;
-    width: 2.8rem;
-    margin: 0.4rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    margin: 0.3rem;
     text-align: center;
-    background: #cc005f;
+    background: #cc005fad;
     color: #FFFFFF;
     position: fixed;
     display: none;
@@ -435,12 +460,13 @@ footer {
     z-index: 100;
 
   }
-    .go-top a img {
-        margin-top: 0.5rem;
+
+    .go-top svg.svg-inline--fa {
+      margin: 0 0 -1rem 0;
+
     }
     .go-top:hover {
-      background: #04c2c9;
-      /*  #000000; */
+      background: #04c2c9a8;
     }
 
 /**************** BOOTSTRAP BREAK POINTS: ****************/    
@@ -472,6 +498,9 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto
+  }
+  footer h6 {
+    margin-top: 1rem;
   }
 }    
 
