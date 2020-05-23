@@ -114,15 +114,6 @@ body {
 .about {
   margin: 3rem auto;
 }
-
-  .about img {
-    height: 9rem;
-    width: 9rem;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-  }
   .about h1 {
     font-size: 2.4rem;
   }
@@ -133,51 +124,72 @@ body {
   .about h3{
     font-size: 1.2rem;
     color: #cc005f;
-    font-weight: 400;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: -0.7rem;
   }
-  .lead {
+.lead {
     font-size: 1.1rem;
-  }
-
-.about-content .info-list li {
-  padding: 0 0 1.5rem 0;
-  margin-bottom: .1rem;
 }
 
-  .about-content .info-list li strong {
+.marg {
+  text-align: center;
+}
+
+.imageP {
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
+.about-content p {
+  margin-bottom: -0.1rem;
+}
+  .about-content p strong {
     text-transform: uppercase;
     letter-spacing: .08rem;
     line-height: 2rem;
     font-size: 0.9rem;
   }
 
-  .about-content .info-list li span {
+  .about-content span {
     display: block;
     color: #04c2c9;
     line-height: 1;
+    margin-bottom: 0.5rem;
   }
-
-ul {
-  list-style-type: none;
-}
-
 
 /**
  * skillbars 
  * ------------------------------
  */
+hr.socket1 {
+   margin-bottom: -0.7rem;
+   width: 9rem;
+   height: 0.11rem;
+   background-color: #414549;
+ }
+
+
 .skill-bars {
   list-style: none;
-  margin: 3rem 0 3rem;
+  margin: 3rem 0 0 0;
+  padding-left: 0;
+  
 }
 
   .skill-bars li {
-    height: .9rem;  
+    height: 1.2rem;  
     background: #a1a1a1;
     width: 100%;
-    margin-bottom: 2.5rem;
-    padding: 0;
+    margin-bottom: 2.4rem;
+    /* padding: 0;  */
     position: relative;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
   }
 
     .skill-bars li strong {
@@ -191,12 +203,27 @@ ul {
     }
 
     .skill-bars li .progress {
-      background: #40474e;
+      /* background: #c43276f3; */
+      /* #40474e; */
       position: relative;
       height: 100%;
+      -moz-border-radius: 25px;
+      -webkit-border-radius: 25px;
+      border-radius: 25px;
+      background-color: rgb(196, 50, 118);
+      box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.4); /* Cria um efeito 3D */
     }
+
     .skill-bars li span {
-      font-size: 0.65rem;
+      font-size: 0.8rem;
+      display: block;
+      height: 100%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      
     }
 
     .skill-bars li .percent5 { width: 5%;}
@@ -247,7 +274,7 @@ ul {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
-  height: 12rem;
+  height: 14rem;
 }
 .carousel-indicators li {
   background-color: #04c2c981;
@@ -484,19 +511,28 @@ footer {
   .about {
     width: 75%;
   }
+  .skill-bars {
+    padding: 0 1rem 0 1rem;
+  }
   .projectss .btn-lg {
     font-size: 0.8rem;
     line-height: 1.2;
     padding: 0.6rem 0.9rem;
   }
-  .about img {
+  /* .about img {
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    margin: auto;
+  } */
+  .marg {
+    margin-top: 2rem;
   }
   footer h6 {
     margin-top: 1rem;
   }
+
+
 }    
 
 @media (min-width: 768px) {
