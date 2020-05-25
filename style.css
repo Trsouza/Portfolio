@@ -34,7 +34,7 @@ body {
   font-size: 0.8rem;
   letter-spacing: 0.05rem;
   background: rgba(0, 0, 0, 0.801) !important;
-   border-bottom: 2px solid #04c2c9;
+  border-bottom: 2px solid #04c2c9;
 }
 .navbar-brand img {
   height: 2rem;
@@ -144,6 +144,7 @@ body {
   margin-left: auto;
   margin-right: auto
 }
+
 .about-content p {
   margin-bottom: -0.1rem;
 }
@@ -160,6 +161,7 @@ body {
     line-height: 1;
     margin-bottom: 0.5rem;
   }
+
 
 /**
  * skillbars 
@@ -199,7 +201,7 @@ hr.socket1 {
       text-transform: uppercase;
       letter-spacing: .08rem;
       line-height: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.7rem;
     }
 
     .skill-bars li .progress {
@@ -216,7 +218,7 @@ hr.socket1 {
     }
 
     .skill-bars li span {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       display: block;
       height: 100%;
       border-top-right-radius: 8px;
@@ -269,29 +271,26 @@ hr.socket1 {
     color: #e2dfdf;
     font-size: 0.95rem;
   }
-
-.exper .carousel-item.active,
-.carousel-item-next,
-.carousel-item-prev {
-  display: block;
-  height: 14rem;
+.padding-z {
+  padding: 0.1rem;
 }
-.carousel-indicators li {
-  background-color: #04c2c981;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: auto 0.4rem;
+.carousel-cell {
+  width: 100%;
+  height: 220px;
 }
-.carousel-indicators .active {
-   background-color: #cc005f;
- }
 
 /* Projects section 
 ****************************************************************/
 
 .projectss {
   margin: 1.5rem auto;
+}
+.projectss .card {
+  border: none;
+}
+
+.projectss .card-img-top {
+  border: none;
 }
 
 .image {
@@ -309,9 +308,9 @@ hr.socket1 {
 }
 .projectss h3 {
   font-size: 1.3rem;
-  color: #000000;
+  color: #04c2c9;
   font-weight: 600;
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 h2.heading {
   font-size: 1.3rem;
@@ -321,34 +320,36 @@ h2.heading {
 }
 .projectss h4 {
   font-size: 1rem;
-  color: #cc005f;
+  color: #FFFFFF;
 }
-.projectss .btn-lg {
+.projectss .btn-sm {
   border-radius: 0;
   font-size: 0.7rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   line-height: 1;
-  padding: 0.4rem 0.8rem;
-  background: #fff;
+  /* padding: 0.3rem 0.5rem; */
+  background: rgba(255, 255, 255, 0.877);
   border: 2px solid #cc005f;
   text-transform: uppercase;
-  color: #ffff
+  color: #FFFFFF;
 }
 
-.projectss .btn-lg:hover,
-.projectss .btn-lg:focus {
+.projectss .btn-sm:hover,
+.projectss .btn-sm:focus {
   background: #FF0077;
-  border: 2px solid #ffff;
+  border: 2px solid #FFFFFF;
 }
 
 .container2 {
   position: relative;
   width: 100%;
-  max-width: 280px;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 100%;
   margin-right: auto;
   margin-left: auto
+}
+.projectss figure {
+  margin: 0;
+  border: none;
 }
 
 .overlay2 {
@@ -357,10 +358,10 @@ h2.heading {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 220px;
+  width: 100%;
   opacity: 0;
-  transition: .7s ease;
-  background-color: #FFFFFF;
+  transition: 1.5s ease;
+  background-color: rgba(36, 35, 35, 0.822);
   margin-left: auto;
   margin-right: auto;
 }
@@ -371,11 +372,37 @@ h2.heading {
 
 .jumbotron {
   padding: 1rem 0 1rem;
+  margin-bottom: auto;
 }
-
 .modal-title {
   color: #cc005f;
   font-weight: 900;
+  font-size: 1rem;
+  letter-spacing: 0.07rem;
+}
+
+.modal-header {
+  padding: 0.5rem 1rem 0.5rem 
+}
+.colorM {
+  color: rgba(255, 255, 255, 0.925);
+  font-weight: 100;
+  font-size: .8rem;
+}
+.colorS {
+  color: #FFFFFF
+}
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.87);
+}
+
+.modal-personalizado {
+  min-width: 90%; /* aqui vc pega a percentagem da sua tela */
+  margin-top: 20%; 
+}
+
+.modal-personalizado img {
+  width: 100%;
 }
 
 /* Services 
@@ -388,6 +415,10 @@ h2.heading {
     color: #cc005f;
     margin-top: 1rem;
   }
+.paddingg {
+  padding: 0 1.2rem 0 1.3rem;
+}
+
 
 
 /*Contact section and footer
@@ -448,6 +479,11 @@ footer {
   footer .copyright span:last-child::after {
     display: none;
   }
+
+  footer .copyright span::after {
+    display: none;
+  }
+  
   footer h6 {
     color: #000000;
     font-weight: 600;
@@ -458,19 +494,8 @@ footer {
  * got-top 
  * ------------------------------------------------------------------- 
  */
- 
- /* #go-top {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
- } */
+
   .go-top {
-    /* display: block; */
-    /* border: 0 none;
-    /* border-radius: 10px; 
-    background: #cc005fad;
-    color: #FFFFFF;   */
     height: 2.6rem;
     width: 2.6rem;
     text-align: center;
@@ -493,9 +518,6 @@ footer {
 
 /**************** BOOTSTRAP BREAK POINTS: ****************/    
 
-  footer .copyright span::after {
-    display: none;
-  }
 @media (min-width: 576px) {
   .caption h1 {
       font-size: 2.2rem;
@@ -514,10 +536,27 @@ footer {
   .skill-bars {
     padding: 0 1rem 0 1rem;
   }
-  .projectss .btn-lg {
+  .carousel-cell {
+    height: 190px;
+  }
+  .projectss .btn-sm {
     font-size: 0.8rem;
     line-height: 1.2;
     padding: 0.6rem 0.9rem;
+  }
+  .projectss h3 {
+    margin-top: 1.5rem;
+  }
+  
+  .modal-personalizado {
+    margin-top: 20px;
+  }
+ 
+  .modal-title {
+    font-size: 1.3rem;
+  }
+  .colorM {
+    font-size: 1rem;
   }
   /* .about img {
     display: block;
@@ -525,9 +564,10 @@ footer {
     margin-right: auto;
     margin: auto;
   } */
+
   .marg {
     margin-top: 2rem;
-  }
+  }  
   footer h6 {
     margin-top: 1rem;
   }
@@ -548,16 +588,28 @@ footer {
   .lead {
      font-size: 1.2rem;
   }
-  .projectss .btn-lg {
-    font-size: 1rem;
-    line-height: 1.2;
+   .skill-bars li strong {
+     font-size: .9rem;
+   }   
+  .projectss .btn-sm {
+    font-size: 0.9rem;
+    line-height: 1.1;
     /* padding: 0.8rem 1rem; */
+  }
+  .projectss h3 {
+    margin-top: 3rem;
   }
   .exper h3 {
     font-size: 1.4rem;
   }
   .exper p {
   font-size: 1rem;
+  }
+  .paddingg {
+    padding: 0 5rem 0 5rem;
+  }
+  .modal-personalizado img {
+    width: 80vh;
   }
   footer {
     text-align: left;
@@ -569,4 +621,13 @@ footer {
     display: inline;
   }
 }
+
+@media (min-width: 1024px) {
+  .projectss h3 {
+     margin-top: 7rem;
+  }
+  .modal-personalizado img {
+    width: 110vh;
+  }
+}  
 
