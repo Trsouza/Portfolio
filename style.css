@@ -522,10 +522,10 @@ footer {
     text-align: center;
     margin: 0.3rem; 
     position: fixed;
-    display: none;
+    /* display: none; */
     bottom: 0;
     right: 0;
-    z-index: 100;
+    /* z-index: 100; */
 
   }
     .go-top svg.svg-inline--fa {
