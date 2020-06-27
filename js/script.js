@@ -3,7 +3,7 @@ function closeMenu() {
 		$('html, body').animate({
 			scrollTop: $($(this).attr('href')).offset().top
 		}, 1000);
-		$('.navbar-toggler').click(); // FAZ UM CLIQUE NO BOTAO QUE CHAMA O MENU PARA OCULTAR O MENU
+		$('.navbar-toggler').click();
 		return false;
 	});
 }
@@ -23,8 +23,8 @@ function goTop() {
 function typeWriter(element) {
 	const text = element.innerHTML.split('');
 	element.innerHTML = '';
-	text.forEach((leter, i) => {
-		setTimeout(() => element.innerHTML += leter, 90 * i)
+	text.forEach((letter, i) => {
+		setTimeout(() => element.innerHTML += letter, 90 * i)
 	});
 }
 
