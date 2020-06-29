@@ -55,7 +55,8 @@ body {
 ***************************************************************/
 
 .home-inner {
-  background-image: url(img/cover.jpg);
+  background-image: url(https://i.imgur.com/JfMLWV1.jpg);
+  /* background-image: url(img/cover.jpg); */
 }
 .caption {
   width: 100%;
