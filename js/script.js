@@ -1,12 +1,12 @@
-function closeMenu() {
-	$('.close-menu').click(function () {
-		$('html, body').animate({
-			scrollTop: $($(this).attr('href')).offset().top
-		}, 1000);
-		$('.navbar-toggler').click();
-		return false;
-	});
-}
+// function closeMenu() {
+// 	$('.close-menu').click(function () {
+// 		$('html, body').animate({
+// 			scrollTop: $($(this).attr('href')).offset().top
+// 		}, 1000);
+// 		$('.navbar-toggler').click();
+// 		return false;
+// 	});
+// }
 
 
 function goTop() {
@@ -19,14 +19,22 @@ function goTop() {
 		}
 	});
 }
+// $(document).ready(function typeWriter(element) {
+// 	const text = element.innerHTML.split('');
+// 	element.innerHTML = '';
+// 	text.forEach((letter, i) => {
+// 		setTimeout(() => element.innerHTML += letter, 90 * i)
+// 	});
 
-function typeWriter(element) {
-	const text = element.innerHTML.split('');
-	element.innerHTML = '';
-	text.forEach((letter, i) => {
-		setTimeout(() => element.innerHTML += letter, 90 * i)
-	});
-}
+// })
 
-const title = document.querySelector('.tat');
-typeWriter(title);
+//  function typeWriter(element) {
+// 	const text = element.innerHTML.split('');
+// 	element.innerHTML = '';
+// 	text.forEach((letter, i) => {
+// 		setTimeout(() => element.innerHTML += letter, 90 * i)
+// 	});
+// }
+
+// const title = document.querySelector('.tat');
+// typeWriter(title);
