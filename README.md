@@ -7,4 +7,3 @@ Technologies used:
 - Bootstrap
 - jQuery
 
-
